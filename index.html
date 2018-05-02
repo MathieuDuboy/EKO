@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>EKO script</title>
+  <meta name="description" content="EKO script">
+  <meta name="author" content="EKO SOLUTIONS">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+  <form action="php/query.php" method="POST">
+    <div class="input_fields_wrap">
+      <button class="add_field_button btn btn-info">Ajouter un SKU <i class="fas fa-plus-circle"></i></button>
+      <p>Vous pouvez tester avec les SKU : S609AA4, S609AA5, S609AA6 par exemple</p>
+      <div><input type="text" class="input_class" name="mes_sku[]"></div>
+    </div>
+    <button class="submit_form btn btn-info"><i class="fas fa-check-square"></i> Valider les SKU</button>
+  </form>
+  <script src="js/script.js"></script>
+</body>
+</html>
