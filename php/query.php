@@ -26,7 +26,9 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => "POST",
   CURLOPT_POSTFIELDS => $datas,
   CURLOPT_HTTPHEADER => array(
-    "cache-control: no-cache"  ),
+    "cache-control: no-cache",
+    "content-type: text/xml"
+  )
 ));
 
 // La réponse et son traitement
